@@ -1,19 +1,17 @@
-// Q.Accept two numbers and print the greatest between them
+// Q.Accept an integer and check whether it is an even number or odd.
 
 import java.util.Scanner;
 public class Demo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a 1st num: ");
-        int a = sc.nextInt();
-        System.out.println("Enter a 2nd num: ");
-        int b = sc.nextInt();
-        if (a > b){
-            System.out.println(a + " is greater.");
-        } else if (a < b) {
-            System.out.println(b + " is greater.");
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+        if (num % 2 == 0){
+            System.out.println("This number is EVEN!!");
+        } else if (num % 2 == 1) {
+            System.out.println("This number is ODD!!");
         } else {
-            System.out.println("Both are equal.");
+            System.out.println("Invalid Input!!!");
         }
     }
 }
