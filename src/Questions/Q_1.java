@@ -10,17 +10,17 @@ public class Q_1 {
         System.out.print("Enter the size of arrya: ");
         int size = sc.nextInt();
         int arr[] = new int[size];
-        int larget = arr[0];
+        int largest = arr[0];
         System.out.println("Enter the elements of the arrya:");
         for (int i = 0; i < size; i++) {
             System.out.print("Enter element " + (i + 1) + ": ");
             arr[i] = sc.nextInt();
         }
         for (int i=0; i<size; i++){
-            if (arr[i] > larget){
-                larget = arr[i];
+            if (arr[i] > largest){
+                largest = arr[i];
             }
         }
-        System.out.println("The larget value is: "+ larget);
+        System.out.println("The larget value is: "+ largest);
     }
 }
