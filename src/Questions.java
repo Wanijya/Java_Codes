@@ -1,8 +1,8 @@
 
 import java.util.Scanner;
 
-// Question : Sum of Two Numbers 
-// Write a program that takes two integers as input and prints their sum.
+// Question : Swap Two Numbers
+// Write a Java program to swap two numbers without using a third variable.
 
 public class Questions {
     public static void main(String[] args) {
@@ -11,6 +11,11 @@ public class Questions {
         int firstNum = sc.nextInt();
         System.out.println("Enter a Second Number:");
         int secondNum = sc.nextInt();
-        System.out.println("The sum of First and Second Numbers is: "+ (firstNum + secondNum));
+        firstNum = firstNum + secondNum;
+        secondNum = firstNum - secondNum;
+        firstNum = firstNum - secondNum;
+        System.out.println("After Swapping");
+        System.out.println("First Number is: " + firstNum);
+        System.out.println("Second Number is: " + secondNum);
     }
 }
