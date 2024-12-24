@@ -1,8 +1,8 @@
 
 import java.util.Scanner;
 
-// Question : Swap Two Numbers
-// Write a Java program to swap two numbers without using a third variable.
+// Question : Area of a Circle
+// Write a program to calculate the area of a circle given its radius. Use the formula Area = π * r * r.
 
 public class Questions {
     public static void main(String[] args) {
@@ -11,11 +11,6 @@ public class Questions {
         int firstNum = sc.nextInt();
         System.out.println("Enter a Second Number:");
         int secondNum = sc.nextInt();
-        firstNum = firstNum + secondNum;
-        secondNum = firstNum - secondNum;
-        firstNum = firstNum - secondNum;
-        System.out.println("After Swapping");
-        System.out.println("First Number is: " + firstNum);
-        System.out.println("Second Number is: " + secondNum);
+        
     }
 }
